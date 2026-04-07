@@ -11,18 +11,18 @@ def get_config():
             "token": os.getenv("CLICKUP_API_TOKEN"),
             "list_id": os.getenv("CLICKUP_LIST_ID"),
         },
-        "plane": {
-            "token": os.getenv("PLANE_API_TOKEN"),
-            "base_url": os.getenv("PLANE_BASE_URL", "https://app.plane.so/api"),
+        "trello": {
+            "api_key": os.getenv("TRELLO_API_KEY"),
+            "token": os.getenv("TRELLO_TOKEN"),
+            "board_id": os.getenv("TRELLO_BOARD_ID"),
+            "default_list_id": os.getenv("TRELLO_DEFAULT_LIST_ID"),
         },
-        "wekan": {
-            "api_url": os.getenv("WEKAN_API_URL"),
-            "user_id": os.getenv("WEKAN_USER_ID"),
-            "token": os.getenv("WEKAN_API_TOKEN"),
+        "asana": {
+            "token": os.getenv("ASANA_TOKEN"),
+            "default_project_id": os.getenv("ASANA_DEFAULT_PROJECT_ID"),
         },
-        "kanboard": {
-            "api_url": os.getenv("KANBOARD_API_URL"),
-            "username": os.getenv("KANBOARD_USERNAME"),
-            "password": os.getenv("KANBOARD_PASSWORD"),
+        "freedcamp": {
+            "api_key": os.getenv("FREEDCAMP_API_KEY"),
+            "default_project_id": os.getenv("FREEDCAMP_DEFAULT_PROJECT_ID"),
         },
     }
